@@ -1,0 +1,121 @@
+.main_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 18px;
+  color: #fefefe;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: left;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.experience_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.experience_card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.icon_wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.company {
+  font-size: 16px;
+  color: #777;
+}
+
+.date {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.points {
+  list-style: none;
+  padding: 0;
+}
+
+.point {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.point::before {
+  content: "•";
+  color: #915eff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .experience_card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .experience_card {
+    width: 100%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,27 @@
+.Image {
+  width: 80%;
+  height: 200px; 
+  margin-top: 80px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; 
+}
+
+
+@media (max-width: 768px) {
+  .Image {
+    width: 95%; 
+    max-width: 750px;
+    margin-top: 80px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .Image {
+    width: 100%; 
+    max-width: 350px;
+    margin-top: 80px; 
+  }
+}

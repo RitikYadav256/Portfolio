@@ -1,0 +1,129 @@
+/* Hero.module.css */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 0 20px;
+}
+
+.heroContainer {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  max-width: 1280px; /* Desktop max width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Spacing between elements */
+  padding: 0 20px;
+}
+
+/* Left-side styling */
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the left */
+  margin-top: 20px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #915eff;
+}
+
+.gradientLine {
+  width: 3px;
+  height: 200px;
+  background: linear-gradient(180deg, #915eff, transparent);
+}
+
+/* Hero text */
+.heroText {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: left; 
+
+  display: flex
+}
+.name{
+  margin-left:10px ;
+  color: blue;
+  font-size: 25px;
+}
+.para{
+  margin-left: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    margin-left: 50px;
+    top: 100px;
+  }
+
+  .heroLeft {
+    align-items: flex-start;
+  }
+
+  .gradientLine {
+    height: 150px;
+  }
+
+  .heroText {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    top: 80px;
+    gap: 10px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .gradientLine {
+    height: 120px;
+    width: 2px;
+  }
+
+  .heroText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    top: 90px;
+    gap: 5px;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+
+  .gradientLine {
+    height: 100px;
+    width: 2px;
+  }
+
+  .heroText {
+    font-size: 18px;
+  }
+}
